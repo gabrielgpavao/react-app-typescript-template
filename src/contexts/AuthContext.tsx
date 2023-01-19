@@ -1,12 +1,12 @@
 import React, { createContext } from 'react';
 import { iProviderChildrenProps } from './interfaces';
 
-export const AuthContenxt = createContext({})
+export const AuthContext = createContext({})
 
-export function AuthContext ({ children }: iProviderChildrenProps) {
+export function AuthProvider ({ children }: iProviderChildrenProps) {
 	return (
-		<AuthContenxt.Provider value={{}}>
+		<AuthContext.Provider value={{}}>
 			{children}
-		</AuthContenxt.Provider>
+		</AuthContext.Provider>
 	)
 }
